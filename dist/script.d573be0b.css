@@ -420,6 +420,7 @@ button {
 }
 button:hover, button:focus {
   background-color: #ff3946;
+  color: #ffffff;
 }
 
 .section-content-wrapper {
@@ -440,10 +441,6 @@ button:hover, button:focus {
   background-color: transparent;
   border-radius: 30px;
   box-shadow: 0px 5px 10px 0px rgba(255, 57, 70, 0.15);
-}
-.hover-button:hover, .hover-button:focus {
-  background-color: #ff3946;
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=/script.d573be0b.css.map */
