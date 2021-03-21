@@ -1,0 +1,52 @@
+.section-get-in-touch {
+    margin-bottom: 60px;
+
+    & h2 {
+      margin-bottom: 60px;
+    }
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  font-family: "WorkSans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.feedback-form {
+  & input,
+  & textarea {
+    padding: 20px 20px;
+    border: none;
+    background-color: $secondary-bg-color;
+
+    &::placeholder {
+      font-family: "WorkSans", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: $main-text-color;
+    }
+  }
+  & .hover-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.feedback-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  & input {
+    width: 45%;
+    height: 60px;
+  }
+}
+
+.feedback-text {
+  width: 100%;
+  border: none;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,27 @@
+.section-creative-work {
+  & h2 {
+    padding-bottom: 90px;
+  }
+  margin-bottom: 200px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-card {
+  width: 370px;
+  height: 280px;
+  margin: 15px;
+  background-color: #b9c0c5;
+}
+
+.more-content-link {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  color: $accent-color;
+}

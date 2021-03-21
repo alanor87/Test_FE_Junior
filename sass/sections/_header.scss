@@ -1,0 +1,138 @@
+header {
+  position: relative;
+  margin-bottom: 100px;
+  & .section-content-wrapper {
+    align-items: center;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header-menu {
+  position: relative;
+  display: none;
+  position: fixed;
+  background-color: $main-bg-color;
+  width: 100%;
+  top: 90px;
+  right: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 5px 10px 0px rgba(255, 57, 70, 0.15);
+  &.is-open {
+    display: flex;
+    z-index: 10;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+    position: static;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: inherit;
+    box-shadow: none;
+    width: auto;
+    flex-direction: row;
+  }
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: $breakpoint-desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.nav-list {
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  @media screen and (min-width: $breakpoint-desktop) {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.nav-link {
+  margin-bottom: 30px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.lang-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
+}
+
+.lang-selection {
+  margin-bottom: 50px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1100px) {
+    margin-right: 50px;
+  }
+}
+
+.button-contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 64px;
+  color: $accent-color;
+  box-shadow: 0px 5px 10px 0px rgba(255, 57, 70, 0.15);
+  border-radius: 4px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    width: 200px;
+  }
+}
+
+.mobile-menu-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: none;
+  }
+}
+.mobile-menu-button-close {
+  display: none;
+  .is-open & {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+  }
+}
