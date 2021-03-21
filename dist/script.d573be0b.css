@@ -210,7 +210,11 @@ nav {
     width: 100%;
     width: 500px;
     height: 500px;
-    transform: translateX(150px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-image-slider {
+    transform: translateX(10vw);
   }
 }
 .hero-image-slider img {
@@ -348,6 +352,10 @@ footer h2 {
   width: 60px;
   height: 36px;
   fill: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -50,7 +50,9 @@
     width: 100%;
     width: 500px;
     height: 500px;
-    transform: translateX(150px);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translateX(10vw);
   }
   & img {
     width: 100%;

@@ -28,5 +28,9 @@ function mobileMenuClose() {
 
 refs.mobileMenuOpenBtn.addEventListener('click', mobileMenuOpen);
 refs.mobileMenuCloseBtn.addEventListener('click', mobileMenuClose);
+refs.mobileMenu.addEventListener('click', (event) => {
+    console.log('click');
+    if (event.target.nodeName === 'A') mobileMenuClose();
+})
 
 $('.hero-image-slider').slick(sliderOptions);
