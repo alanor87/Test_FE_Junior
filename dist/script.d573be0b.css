@@ -416,7 +416,7 @@ button {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: color 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear;
 }
 button:hover, button:focus {
   background-color: #ff3946;
