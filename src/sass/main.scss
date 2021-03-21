@@ -19,8 +19,14 @@ a {
   text-decoration: none;
   font-size: 26px;
   font-weight: bold;
+  transition: color 250ms linear;
   @media screen and(min-width: $breakpoint-desktop) {
     font-size: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 
@@ -58,7 +64,14 @@ button {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
+
 .section-content-wrapper {
   width: 80%;
   padding: 0 5px;

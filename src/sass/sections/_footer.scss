@@ -12,9 +12,10 @@ footer {
   .nav-list {
     justify-content: center;
     margin-bottom: 60px;
-    & a {
-      color: $main-bg-color;
-    }
+  }
+  
+  & a {
+    color: $main-bg-color;
   }
 
   & h2 {
