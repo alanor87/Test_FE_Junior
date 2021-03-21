@@ -1,0 +1,25 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --out-dir ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanor87/Test_FE_Junior.git"
+  },
+  "keywords": [],
+  "author": "alanor <jonny.freeman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanor87/Test_FE_Junior/issues"
+  },
+  "homepage": "https://github.com/alanor87/Test_FE_Junior#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  }
+}
